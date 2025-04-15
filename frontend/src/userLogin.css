@@ -1,0 +1,63 @@
+@import url('var/variables.css');
+
+input, textarea {
+    border: 1px solid var(--FBC);
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+/* Basisstijl voor de submit-knop */
+.login-container input[type="submit"] {
+    background-color: var(--STC); /* Standaard blauwe kleur */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: not-allowed; /* Niet klikbaar tot aan validatie */
+    opacity: 0.5; /* Maak het half transparant als het niet actief is */
+    transition: all 0.3s ease; /* Soepele overgangseffecten */
+}
+
+/* Stijl wanneer het formulier valide is */
+.login-container form:valid input[type="submit"] {
+    cursor: pointer; /* Cursor verandert naar pointer */
+    opacity: 1; /* Volledige zichtbaarheid */
+    background-color: var(--ScC); /* Groene kleur bij volledige validatie */
+}
+
+/* Hover-effect wanneer valide */
+.login-container form:valid input[type="submit"]:hover {
+    background-color: var(--SHcC); /* Donkerder groen bij hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Voeg een lichte schaduw toe */
+}
+
+/* Hover-effect zonder validatie */
+.login-container input[type="submit"]:hover {
+    background-color: var(--LHC); /* Donkerdere blauwe kleur bij hover */
+}
+
+/* Basisstijl voor de login-container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%; /* Zorg ervoor dat de container de volle breedte van het scherm heeft */
+    background-color: var(--BG);
+}
+
+/* Formulier container */
+.login-container form {
+    width: 60%; /* Standaard breedte van het formulier op grotere schermen */
+    max-width: 600px; /* Maximaliseer de breedte voor grotere schermen */
+}
+
+/* Media query voor schermen kleiner dan 768px (mobiele apparaten) */
+@media screen and (max-width: 768px) {
+    .login-container form {
+        width: 100%; /* 100% breedte voor mobiele apparaten */
+        padding: 10px; /* Optioneel: voeg wat padding toe voor mobiel gebruik */
+    }
+}

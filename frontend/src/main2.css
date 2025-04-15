@@ -1,0 +1,552 @@
+@import url('var/variables.css');
+@import url('navbar.css');
+@import url(userLogin.css);
+body {
+    margin: 0; /* Geen ruimte aan boven- en zijkant */
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--BG);
+    font-size: large;
+    color: var(--PTC);
+    font-family: Arial, sans-serif;
+}
+
+body.dark-mode {
+    background-color: var(--BGD);
+    color: var(--PTCD);
+ }
+
+ body.dark-mode h1{
+    color: var(--H);
+ }
+
+button {
+    background-color: var(--SC);
+    color: var(--CARD);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+body.dark-mode button{
+    background-color: var(--DSC);
+}
+
+button:hover {
+    background-color: var(--ScC);
+}
+
+body.dark-mode button:hover {
+    background-color: var(--Dbutton);
+}
+
+input, textarea {
+    border: 1px solid var(--FBC);
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+body.dark-mode input, textarea {
+    color: var(--Dinp);
+}
+
+body.dark-mode input{
+    border: var(--Dbord);
+    background-color: var(--DSC);
+}
+
+body.dark-mode textarea{
+    border: var(--Dbord);
+    background-color: var(--DSC);
+}
+
+input:focus, textarea:focus {
+    border-color: var(--PC);
+    outline: none;
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: var(--CARD);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--CARDF);
+}
+
+body.dark-mode .chat{
+    background-color: var(--Dch); 
+ }
+ 
+.chat-form-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 2000px;
+    margin: 20px auto;
+}
+
+/* Stijl voor de chat en het formulier */
+#chat, #forms {
+    flex: 1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--CARDF);
+    background-color: var(--CARD);
+}
+
+body.dark-mode #chat {
+    background-color: var(--Dcha);
+}
+
+body.dark-mode #forms {
+    background-color: var(--Dcha);
+}
+
+.chat .message {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.chat .message.own {
+    background-color: var(--COMC);
+    align-self: flex-end;
+}
+
+body.dark-mode .chat .message.own {
+    background-color: var(--DCO);
+    color: var(--BCR);
+}
+
+.chat .message.received {
+    background-color: var(--CRMC);
+    align-self: flex-start;
+}
+
+body.dark-mode .chat .message.received {
+    background-color: var(DCR);
+    color: var(--BCR);
+}
+
+/* dit is de css voor de containers */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: var();
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 2px 0 5px var(--BS);
+}
+
+body.dark-mode .sidebar{
+    background-color: var(--DS);
+}
+
+.sidebar img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px var(--BS);
+}
+
+.content .card {
+    background-color: var(--card-bg);
+    color: var(--card-color);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px var(--BS);
+    transition: transform 0.2s;
+}
+
+.content .card:hover {
+    transform: scale(1.02);
+}
+
+.extra-space {
+    width: 20%;
+    background-color: var(--extra-bg);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: -2px 0 5px var(--BS);
+}
+
+body.dark-mode .extra-space{
+    background-color: var(--DES);
+}
+
+#quote-widget {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+#quote {
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.advertisement {
+    width: 10%;
+    background-color: var(--S); /* Lichtrood voor reclame */
+    padding: 10px;
+    text-align: center;
+    box-shadow: 2px 0 5px var(--BS);
+}
+
+.bar-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background-color: var(--BCR); /* Lichtgrijze achtergrond */
+}
+
+.bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: var(--STC, --BB);
+    border-radius: 5px;
+    color: var(--CARD); /* Tekstkleur */
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.bar:hover {
+    background-color: var(--LHC, --BH); /* Vervang var(--LHC) door een standaardkleur */
+}
+
+.extra-space {
+    width: 20%;
+    background-color: var(--Dinp); /* Lichtgroen voor extra ruimte */
+    padding: 10px;
+    text-align: center;
+    box-shadow: -2px 0 5px var(--BS);
+}
+
+/* login pagina */
+
+/* Basisstijl voor de submit-knop */
+.login-container input[type="submit"] {
+    background-color: var(--STC); /* Standaard blauwe kleur */
+    color: var(--CARD);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: not-allowed; /* Niet klikbaar tot aan validatie */
+    opacity: 0.5; /* Maak het half transparant als het niet actief is */
+    transition: all 0.3s ease; /* Soepele overgangseffecten */
+}
+
+/* Stijl wanneer het formulier valide is */
+.login-container form:valid input[type="submit"] {
+    cursor: pointer; /* Cursor verandert naar pointer */
+    opacity: 1; /* Volledige zichtbaarheid */
+    background-color: var(--ScC); /* Groene kleur bij volledige validatie */
+}
+
+/* Hover-effect wanneer valide */
+.login-container form:valid input[type="submit"]:hover {
+    background-color: var(--SHcC); /* Donkerder groen bij hover */
+    box-shadow: 0 4px 6px var(--BS); /* Voeg een lichte schaduw toe */
+}
+
+/* Hover-effect zonder validatie */
+.login-container input[type="submit"]:hover {
+    background-color: var(--LHC); /* Donkerdere blauwe kleur bij hover */
+}
+
+/* Basisstijl voor de login-container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%; /* Zorg ervoor dat de container de volle breedte van het scherm heeft */
+    background-color: var(--BG);
+}
+
+/* Formulier container */
+.login-container form {
+    width: 60%; /* Standaard breedte van het formulier op grotere schermen */
+    max-width: 600px; /* Maximaliseer de breedte voor grotere schermen */
+}
+
+/* Media query voor schermen kleiner dan 768px (mobiele apparaten) */
+@media screen and (max-width: 768px) {
+    .login-container form {
+        width: 100%; /* 100% breedte voor mobiele apparaten */
+        padding: 10px; /* Optioneel: voeg wat padding toe voor mobiel gebruik */
+    }
+}
+
+/* zoekbalk */
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.search-bar input {
+    width: 80%;
+    padding: 0.5rem;
+    border: 1px solid var(--FBC);
+    border-radius: 8px 0 0 8px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.search-bar input:focus {
+    border-color: var(--SC);
+}
+
+.search-bar button {
+    padding: 0.5rem 1rem;
+    background-color: var(--SC);
+    color: var(--CARD);
+    border: none;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    transform: translateY(-5px);
+}
+
+.search-bar button:hover {
+    background-color: var(--LHC);
+}
+
+body.dark-mode button{
+    background-color: var(--DSC)
+}
+
+body.dark-mode .navbar ul{
+    background-color: var(--DSC) /* Uniforme achtergrondkleur */
+}
+
+body.dark-mode .navbar ul li a.active {
+        background-color: var(--PCD); /* Actieve linkkleur uit je palet */
+}
+
+body.dark-mode .login-container {
+    background-color: var(--BGD); /* Actieve linkkleur uit je palet */
+}
+
+table {
+    border-collapse: collapse;
+    box-shadow: 0 2px 8px var(--T);
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid var(--DSC);
+    text-align: left;
+}
+
+td{
+    background-color: var(--Td); 
+}
+
+body.dark-mode td{
+    background-color: var(--Dtd);
+}
+
+body.dark-mode th{
+    background-color: var(--Dth);
+}
+
+td a {
+    color: var(--tda);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+.button-class {
+    background-color: var(--SC);
+    color: var(--CARD);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+body.dark-mode .button-class{
+    background-color: var(--DSC)
+}
+
+.button-class:hover {
+    background-color: var(--ScC);
+}
+
+body.dark-mode .button-class:hover {
+    background-color: var(--BB);
+}
+
+a {
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.management-container { 
+    display: flex; 
+    gap: 2rem; 
+    margin: 2rem 0;
+}
+
+.management-section { 
+    flex: 1; 
+    padding: 1rem; 
+    border: 1px solid var(--WD); 
+    border-radius: 5px; 
+}
+
+body.dark-mode .management-section{
+    border: 1px solid var(--DSC); 
+}
+
+.form-group { 
+    margin-bottom: 1rem; 
+}
+
+.form-group label { 
+    display: block; 
+    margin-bottom: 0.5rem;
+}
+
+select, input[type="text"], textarea { 
+    width: 100%; 
+    padding: 0.5rem; 
+}
+
+.btn { 
+    padding: 0.5rem 1rem; 
+    margin-right: 0.5rem; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+}
+
+.btn-primary { 
+    background-color: var(--G); 
+    color: var(--CARD); 
+}
+
+.btn-danger { 
+    background-color: var(--R); 
+    color: var(--CARD); 
+}
+
+.btn-secondary { 
+    background-color: var(--Bp); 
+    color: var(--CARD); 
+}
+
+.btn-third { 
+    background-color: var(--Yb); 
+    color: var(--CARD); 
+}
+
+body.dark-mode .btn-primary { 
+    padding: 0.5rem 1rem; 
+    margin-right: 0.5rem; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    background-color: var(--G); 
+    color: var(--CARD); 
+    font-family: 'Arial', sans-serif; 
+}
+
+body.dark-mode .btn-third { 
+    padding: 0.5rem 1rem; 
+    margin-right: 0.5rem; 
+    margin-left: 0.5rem;
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    background-color: var(--Yb); 
+    color: var(--CARD); 
+    font-family: 'Arial', sans-serif; 
+}
+
+.form-group #beschrijving {
+    color: var(--CARDF);
+}
+
+.welcome-box {
+    flex: 1 1 200px;
+    max-width: 600px;
+    background-color: var(--CARD);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px var(--BS);
+    text-align: center;
+}
+
+body.dark-mode .welcome-box {
+    background-color: var(--Dcha);
+}
+
+.welcome-box a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--BH);
+    color: var(--CARD);
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.welcome-box a:hover {
+    background-color: var(--BB);
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.box-containerB{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.box-containerB h1{
+    font-size: 50px;
+}

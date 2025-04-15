@@ -1,0 +1,50 @@
+:root {
+--PC: hsl(212, 60%, 39%); /* Primaire kleur */
+    --SC: #2980B9; /* Secundaire kleur */
+    --BG: #F5F7FA; /* Achtergrondkleur */
+    --PTC: #2C3E50; /* Primaire tekstkleur */
+    --STC: #7F8C8D; /* Secundaire tekstkleur */
+    --WC: #E74C3C; /* Waarschuwing kleur */
+    --ScC: #27AE60; /* Succes kleur */
+    --SHcC: #00973f; /* Succes kleur */
+    --LHC: #4d616d; /* Hoverkleur voor links */
+    --FBC: #DADFE1; /* Randkleur formulieren */
+    --COMC: #D6EAF8; /* Chatballon eigen bericht */
+    --CRMC: #ECF0F1; /* Chatballon ontvangen bericht */
+    --BCR: #f1f1f1; /* barcontainer kleur*/
+    --CARD: #fff;  
+    --CARDF: hsl(0, 0%, 0%);  
+    --H: #f1f1f1;
+    --s: #f8d3cf;
+    --BS: rgba(0, 0, 0, 0.1);
+    --T: rgb(255 255 255 / 5%);
+    --Td: #f5f5f5;
+    --tda: #d9534f;
+    --BB: #007bff;
+    --BH: #0056b3;
+    --es: #d4edda;
+    --WD: #ddd;
+    --R: #f44336;
+    --G: #4CAF50;
+    --Bp: #2196F3;
+    --Yb: #75743b;
+
+
+    --BGD: #1a1c20; /* AChtergrond donker */
+    --PTCD: #ababac; /* PRimaire tekstkleur voor darkmode */
+    --DSC: #3e4346; /* Secundaire kleur darkmode */
+    --COMCD: #374d89; 
+    --CRMCD: #796253; /* Chatballon ontvangen bericht */
+    --PCD: hsl(235.38deg 5.69% 41.11%); /* Primaire kleur */
+    --Dbutton: #007bff;
+    --Dbord: #5f4d4d;
+    --Dch: #5f5f5f;
+    --Dcha: #313131;
+    --Dinp: #d4edda;
+    --DCO: #5b7477;
+    --DCR: #796253;
+    --DS: #717171;
+    --DES: #516b73;
+    --Dtd: #27292b;
+    --Dth: #242527;
+}

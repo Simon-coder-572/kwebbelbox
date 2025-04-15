@@ -1,0 +1,67 @@
+✅ 2025-02-25 21:01:18 - Gebruiker aangemaakt met gebruikersnaam: *test3654* en met e-mail: *test@test.test33*
+✅ 2025-02-25 21:04:31 - Gebruiker aangemaakt met gebruikersnaam: *test* en met e-mail: *test@test.nl3332*
+✅ 2025-02-25 21:04:42 - Gebruiker succesvol verwijderd: ID = 24
+❌2025-02-25 21:17:28 - Er is een fout opgereden in de database met error message (db, connect): Unknown database 'informa2tica'
+❌2025-02-25 21:17:29 - Er is een fout opgereden in de database met error message (db, connect): Unknown database 'informa2tica'
+❌2025-02-25 21:17:29 - Er is een fout opgereden in de database met error message (db, connect): Unknown database 'informa2tica'
+❌2025-02-25 21:17:37 - Er is een fout opgereden in de database met error message (db, connect): Access denied for user 'hosting'@'localhost' (using password: YES)
+❌2025-02-25 21:17:37 - Er is een fout opgereden in de database met error message (db, connect): Access denied for user 'hosting'@'localhost' (using password: YES)
+❌2025-02-25 21:17:38 - Er is een fout opgereden in de database met error message (db, connect): Access denied for user 'hosting'@'localhost' (using password: YES)✅ 2025-02-25 21:23:59 - Gebruiker aangemaakt met gebruikersnaam: *test* en met e-mail: *simmon_bloem@outlook.com*
+✅ 2025-02-25 21:24:09 - Gegevens succesvol bijgewerkt voor gebruiker met ID (userController, updateUserAndLogout): 25✅ 2025-02-26 23:11:04 - Gebruiker aangemaakt met gebruikersnaam: *test* en met e-mail: *test@test.test*
+❌ 2025-03-31 20:09:56 - Fout bij het aanmaken van een groep: Unknown column 'groepnaam' in 'field list'
+❌ 2025-03-31 20:19:58 - Fout bij het aanmaken van een groep: Unknown column 'groepnaam' in 'field list'
+❌ 2025-03-31 20:20:50 - Fout bij het aanmaken van een groep: Unknown column 'groepnaam' in 'field list'
+❌ 2025-03-31 20:21:43 - Fout bij het aanmaken van een groep: Unknown column 'groepnaam' in 'field list'
+❌ 2025-03-31 20:42:28 - Fout bij het aanmaken van een groep: Unknown column 'groepnaam' in 'field list'
+✅ 2025-04-12 17:33:27 - Gegevens succesvol bijgewerkt voor gebruiker met ID (userController, updateUserAndLogout): 3
+[2025-04-12 17:43:04] Gebruiker toevoegen mislukt: Duplicate entry '3-9' for key 'user_groep.PRIMARY'
+[2025-04-12 17:45:13] Gebruiker toevoegen mislukt: Duplicate entry '3-9' for key 'user_groep.PRIMARY'
+[2025-04-12 17:50:19] Gebruiker toevoegen mislukt: Duplicate entry '1-22' for key 'user_groep.PRIMARY'
+[2025-04-12 07:34:53] Leden ophalen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:38:11] Leden ophalen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:38:18] Gebruiker toevoegen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:38:18] Leden ophalen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:38:20] Leden ophalen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:38:20] Leden ophalen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:38:21] Leden ophalen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:38:21] Leden ophalen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:38:22] Leden ophalen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:38:22] Leden ophalen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:38:25] Gebruiker toevoegen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:38:25] Leden ophalen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:38:26] Leden ophalen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:38:34] Leden ophalen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:38:38] Gebruiker toevoegen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:38:38] Leden ophalen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:38:41] Gebruiker toevoegen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:38:41] Leden ophalen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:38:43] Leden ophalen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:38:43] Leden ophalen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:38:45] Leden ophalen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:38:49] Gebruiker toevoegen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:38:49] Leden ophalen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:38:51] Leden ophalen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:38:51] Leden ophalen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:38:52] Leden ophalen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:39:41] Gebruiker toevoegen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:39:41] Leden ophalen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:39:43] Leden ophalen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:39:49] Leden ophalen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:39:50] Leden ophalen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:39:50] Leden ophalen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:39:51] Leden ophalen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:40:11] Leden ophalen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:40:12] Leden ophalen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:40:23] Leden ophalen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:40:25] Leden ophalen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:40:26] Leden ophalen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:41:05] Gebruiker toevoegen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:41:05] Leden ophalen mislukt: Table 'informatica.user_groep' doesn't exist
+[2025-04-12 07:45:11] Gebruiker toevoegen mislukt: Unknown column 'group_id' in 'field list'
+[2025-04-12 07:45:11] Leden ophalen mislukt: Unknown column 'ug.group_id' in 'where clause'
+[2025-04-12 07:49:54] Leden ophalen mislukt: Unknown column 'ug.group_id' in 'where clause'
+[2025-04-12 07:49:55] Leden ophalen mislukt: Unknown column 'ug.group_id' in 'where clause'
+[2025-04-12 07:50:03] Gebruiker toevoegen mislukt: Unknown column 'group_id' in 'field list'
+[2025-04-12 07:50:04] Leden ophalen mislukt: Unknown column 'ug.group_id' in 'where clause'
+✅ 2025-04-13 13:30:19 - Gebruiker aangemaakt met gebruikersnaam: *tot* en met e-mail: *tot@tot.tot*
+[2025-04-13 17:27:19] Gebruiker toevoegen mislukt: Duplicate entry '4-24' for key 'user_groep.PRIMARY'
